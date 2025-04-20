@@ -1,0 +1,105 @@
+:root {
+	--border-radius: 7px;
+
+	--bright-blue: hsl(220, 98%, 61%);
+	--check-bg: linear-gradient(
+		135deg,
+		rgba(87, 221, 255, 1) 40%,
+		rgba(192, 88, 243, 1) 100%
+	);
+	// dark theme
+	--box-shadow-clr: hsla(233, 69%, 3%, 0.687);
+	--box-shadow: 0 20px 20px -15px var(--box-shadow-clr);
+	--dark-blue: hsl(235, 21%, 11%);
+	--dark-desaturated-blue: hsl(235, 24%, 19%);
+	--grayish-blue: hsl(234, 39%, 85%);
+	--grayish-blue-hover: hsl(236, 33%, 92%);
+	--dark-grayish-blue: hsl(234, 11%, 52%);
+	--very-dark-grayish-blue: hsl(233, 14%, 35%);
+	--very-dark-grayish-blue-secondary: hsl(237, 14%, 26%);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+img,
+picture,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+body {
+	font-size: 18px;
+	font-family: "Josefin Sans", sans-serif;
+	color: #fff;
+	background-color: var(--dark-blue);
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	color: var(--grayish-blue);
+	transition: color 300ms;
+}
+
+button:hover {
+	color: #fff;
+}
+
+.container {
+	padding: 0 2rem;
+	margin: 0 auto;
+	max-width: 650px;
+}
+
+.todo-container {
+	border-radius: 5px;
+	box-shadow: var(--box-shadow);
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: 10px;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+.add-new {
+	background-color: var(--dark-desaturated-blue);
+	border-radius: var(--border-radius);
+	margin: 1rem 0;
+	padding: 1rem;
+	padding-left: 2rem;
+	color: var(--grayish-blue);
+	box-shadow: var(--box-shadow);
+
+	input {
+		color: #fff;
+		background-color: inherit;
+		width: 100%;
+		border: 0;
+		outline: 0;
+	}
+}
+
+.todo-list {
+	background-color: var(--dark-desaturated-blue);
+	min-height: 388px;
+	border-radius: var(--border-radius);
+}

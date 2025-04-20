@@ -1,0 +1,35 @@
+.todo-footer {
+	margin-top: -8px;
+
+	.footer {
+		padding: 1.5rem;
+		background-color: var(--dark-desaturated-blue);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: var(--border-radius);
+		box-shadow: var(--box-shadow);
+	}
+
+	.sort-buttons {
+		background-color: var(--dark-desaturated-blue);
+		padding: 1.5rem;
+		margin-top: 1rem;
+		border-radius: var(--border-radius);
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		.active {
+			color: var(--bright-blue);
+		}
+	}
+}
+
+@media screen and (min-width: 530px) {
+	.todo-footer {
+		.sort-buttons {
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
